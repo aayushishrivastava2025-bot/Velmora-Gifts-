@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6b2d5c">
+<title>GiftNest | Gifts for Every Moment</title>
+<meta name="description" content="Find thoughtful gifts for birthdays, anniversaries and every special moment. Order directly on WhatsApp.">
+<style>
+:root{--plum:#6b2d5c;--plum2:#8b426f;--cream:#fff8f1;--ink:#2d2430;--muted:#716773;--gold:#d8ad65;--line:#f0e5eb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--ink)}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.topbar{background:var(--plum);color:#fff;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.3px}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px max(5%,calc((100% - 1180px)/2));border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:5}.brand{font-family:Georgia,serif;font-size:25px;font-weight:bold;color:var(--plum);white-space:nowrap}.brand span{color:var(--gold)}.navlinks{display:flex;gap:22px;font-size:14px;color:#4f4551}.navlinks a:hover{color:var(--plum2)}.navbtn{background:var(--plum);color:#fff;border:0;border-radius:999px;padding:11px 17px;cursor:pointer;font-weight:bold}.hero{background:linear-gradient(105deg,rgba(37,18,35,.86),rgba(72,33,65,.43)),url('https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:430px;display:flex;align-items:center;color:#fff;padding:55px max(6%,calc((100% - 1120px)/2))}.hero-copy{max-width:560px}.eyebrow{color:#f1d39b;text-transform:uppercase;font-size:12px;font-weight:bold;letter-spacing:2px}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,6vw,64px);line-height:1.05;margin:15px 0}.hero p{font-size:17px;line-height:1.7;color:#fff4fa;max-width:480px}.primary{display:inline-block;background:#f0ce91;color:#352433;padding:14px 22px;border-radius:999px;font-weight:bold;margin-top:12px;border:0;cursor:pointer}.section{max-width:1180px;margin:auto;padding:58px 22px}.sectionhead{text-align:center;margin-bottom:28px}.sectionhead .eyebrow{color:var(--plum2)}h2{font-family:Georgia,serif;font-size:clamp(28px,4vw,38px);margin:9px 0;color:#332533}.sectionhead p,.muted{color:var(--muted);line-height:1.6}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.cat{border-radius:18px;overflow:hidden;position:relative;min-height:180px;background:#f8edf3}.cat img{width:100%;height:190px;object-fit:cover;display:block;transition:transform .3s}.cat:hover img{transform:scale(1.04)}.cat strong{display:block;padding:13px;text-align:center}.tools{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin:25px 0}.search{flex:1;min-width:190px;padding:13px 16px;border:1px solid #e5d9e2;border-radius:999px;outline-color:var(--plum)}.filter{padding:13px;border:1px solid #e5d9e2;border-radius:999px;background:#fff;color:var(--ink)}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-3px);box-shadow:0 10px 25px #44213b12}.product img{width:100%;height:220px;object-fit:cover;background:#f7eff3}.productbody{padding:15px}.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:1px;background:#f8edf3;color:var(--plum);padding:5px 8px;border-radius:99px}.product h3{font-size:16px;margin:10px 0 6px}.desc{font-size:13px;color:var(--muted);line-height:1.5;min-height:38px}.price{font-weight:bold;font-size:18px;margin:11px 0;color:var(--plum)}.order{width:100%;border:0;background:var(--plum);color:#fff;border-radius:10px;padding:12px;cursor:pointer;font-weight:bold}.order:hover,.navbtn:hover{background:var(--plum2)}.empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted)}.promise{background:var(--cream)}.promisegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:center}.promiseitem{padding:15px}.promiseitem .emoji{font-size:30px}.promiseitem h3{margin:10px 0 6px}.promiseitem p{font-size:14px;color:var(--muted);line-height:1.6}.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about img{width:100%;border-radius:20px;max-height:370px;object-fit:cover}.about p{line-height:1.8;color:var(--muted)}.contact{background:#382334;color:#fff;text-align:center;padding:50px 20px}.contact h2{color:#fff}.contact p{color:#eadde8;line-height:1.7}.contact .primary{margin-bottom:8px}.footer{background:#241824;color:#d9cbd7;padding:20px;text-align:center;font-size:12px}.floating{position:fixed;right:17px;bottom:18px;z-index:6;background:#168b52;color:#fff;padding:13px 17px;border-radius:999px;box-shadow:0 5px 20px #0002;font-weight:bold}.notice{max-width:900px;margin:0 auto 25px;background:#fff7df;border:1px solid #f0d99b;color:#614b20;padding:12px 15px;border-radius:12px;font-size:13px;line-height:1.6}
+@media(max-width:850px){.navlinks{display:none}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.product img{height:190px}.hero{min-height:390px}.about{grid-template-columns:1fr}.promisegrid{grid-template-columns:1fr}.section{padding:42px 17px}}
+@media(max-width:420px){.brand{font-size:22px}.nav{padding:14px}.navbtn{padding:10px 12px;font-size:12px}.products{gap:11px}.product img{height:155px}.productbody{padding:11px}.product h3{font-size:14px}.desc{font-size:12px}.price{font-size:16px}.hero{padding:42px 22px}.hero p{font-size:15px}}
+</style>
+</head>
+<body>
+<div class="topbar">A little thought can make a big moment ✦ Thoughtful gifts for every occasion</div>
+<header class="nav">
+  <a class="brand" href="#home">Gift<span>Nest</span></a>
+  <nav class="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#shop">Shop Gifts</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
+  <a class="navbtn" href="#shop">Shop Now ↗</a>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="hero-copy">
+  <div class="eyebrow">Made for meaningful moments</div>
+  <h1>Gifts that say<br>what words can't.</h1>
+  <p>From little surprises to unforgettable celebrations, discover thoughtful gifts for the people who matter most.</p>
+  <a class="primary" href="#shop">Explore the Collection →</a>
+ </div>
+</section>
+<section class="section" id="categories">
+ <div class="sectionhead"><div class="eyebrow">Find their kind of happy</div><h2>Shop by Occasion</h2><p>Pick a moment. We'll help you find a gift for it.</p></div>
+ <div class="categories">
+  <a class="cat" href="#shop" onclick="setCategory('Birthday');"><img src="https://images.unsplash.com/photo-1530103862676-de8c9de77292?auto=format&fit=crop&w=600&q=80" alt="Birthday gift"><strong>Birthday Gifts</strong></a>
+  <a class="cat" href="#shop" onclick="setCategory('Anniversary');"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80" alt="Flowers for anniversary"><strong>Anniversary</strong></a>
+  <a class="cat" href="#shop" onclick="setCategory('Personalized');"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Personalized gift"><strong>Personalized Gifts</strong></a>
+  <a class="cat" href="#shop" onclick="setCategory('Hampers');"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Gift hamper"><strong>Gift Hampers</strong></a>
+ </div>
+</section>
+<section class="section" id="shop" style="padding-top:20px">
+ <div class="sectionhead"><div class="eyebrow">A little something for everyone</div><h2>Featured Gifts</h2><p>Browse the collection and order directly with us.</p></div>
+ <div class="notice"><strong>Before launch:</strong> This is a starter demo. Replace the sample products/prices and add your WhatsApp number in the code before accepting real orders.</div>
+ <div class="tools"><input class="search" id="search" type="search" placeholder="Search gifts..." aria-label="Search gifts"><select class="filter" id="filter" aria-label="Filter by category"><option value="All">All categories</option><option>Birthday</option><option>Anniversary</option><option>Personalized</option><option>Hampers</option></select></div>
+ <div class="products" id="products"></div>
+</section>
+<section class="promise">
+ <div class="section">
+  <div class="sectionhead"><div class="eyebrow">The GiftNest promise</div><h2>Small details. Big smiles.</h2></div>
+  <div class="promisegrid">
+   <div class="promiseitem"><div class="emoji">🎁</div><h3>Thoughtfully Picked</h3><p>Gift ideas for birthdays, celebrations and everyday surprises.</p></div>
+   <div class="promiseitem"><div class="emoji">💌</div><h3>Personal Touch</h3><p>Tell us what you have in mind and we'll help you choose.</p></div>
+   <div class="promiseitem"><div class="emoji">🤝</div><h3>Direct Support</h3><p>Chat with us to confirm availability, delivery and order details.</p></div>
+  </div>
+ </div>
+</section>
+<section class="section about" id="about">
+ <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=1000&q=85" alt="Beautifully wrapped gift boxes">
+ <div><div class="eyebrow">A little about us</div><h2>Every gift has a story.</h2><p>We believe the best gifts are the ones that make someone feel remembered. Our goal is to make choosing a thoughtful present simple, joyful and personal.</p><p>Need help choosing? Send us a message and tell us the occasion, your budget and who you're shopping for.</p><a class="primary" href="#contact">Talk to Us →</a></div>
+</section>
+<section class="contact" id="contact">
+ <div class="eyebrow">Let's make someone's day</div><h2>Looking for the perfect gift?</h2><p>Message us to ask about products, availability, delivery and custom requests.</p>
+ <a class="primary wa-link" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+ <p style="font-size:12px;margin-top:15px">Instagram / Email details can be added here when ready.</p>
+</section>
+</main>
+<footer class="footer">© <span id="year"></span> GiftNest. Made for meaningful moments.</footer>
+<a class="floating wa-link" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+<script>
+/* SETUP: Replace the demo number below with your WhatsApp number, digits only.
+   Example India: 919876543210 (91 + 10-digit mobile number). */
+const WHATSAPP_NUMBER = "919999999999";
+const products = [
+ {id:1,name:"Birthday Surprise Box",category:"Birthday",price:599,desc:"A cheerful box for a special birthday.",image:"https://images.unsplash.com/photo-1530103862676-de8c9de77292?auto=format&fit=crop&w=700&q=80"},
+ {id:2,name:"Rose & Keepsake Set",category:"Anniversary",price:799,desc:"A thoughtful surprise for your favourite person.",image:"https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=700&q=80"},
+ {id:3,name:"Personalised Mug Gift",category:"Personalized",price:349,desc:"A daily reminder with a personal touch.",image:"https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80"},
+ {id:4,name:"Celebration Gift Hamper",category:"Hampers",price:999,desc:"A bundle of little joys for a big occasion.",image:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80"},
+ {id:5,name:"Elegant Gift Box",category:"Birthday",price:499,desc:"A simple, elegant way to say you care.",image:"https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=700&q=80"},
+ {id:6,name:"Love Notes Gift Set",category:"Anniversary",price:649,desc:"A sweet gift for a meaningful moment.",image:"https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=700&q=80"},
+ {id:7,name:"Custom Photo Keepsake",category:"Personalized",price:449,desc:"Make a favourite memory part of the gift.",image:"https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80"},
+ {id:8,name:"Premium Festive Hamper",category:"Hampers",price:1299,desc:"A warm, festive bundle for family and friends.",image:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80"}
+];
+function waUrl(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
+function orderProduct(p){if(WHATSAPP_NUMBER==="919999999999"){alert("Demo WhatsApp number hai. index.html mein WHATSAPP_NUMBER ko apne number se replace karo.");return}window.open(waUrl("Hello! I want to order: "+p.name+" | Price: ₹"+p.price+". Please confirm availability and delivery."),"_blank")}
+function setCategory(c){document.getElementById("filter").value=c;renderProducts()}
+function renderProducts(){
+ const query=document.getElementById("search").value.toLowerCase().trim();
+ const cat=document.getElementById("filter").value;
+ const list=products.filter(p=>(cat==="All"||p.category===cat)&&(p.name.toLowerCase().includes(query)||p.desc.toLowerCase().includes(query)||p.category.toLowerCase().includes(query)));
+ const root=document.getElementById("products");
+ if(!list.length){root.innerHTML='<div class="empty">No gifts found. Try another search.</div>';return}
+ root.innerHTML=list.map(p=>`<article class="product"><img src="${p.image}" alt="${p.name}" loading="lazy"><div class="productbody"><span class="tag">${p.category}</span><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">₹${p.price.toLocaleString("en-IN")}</div><button class="order" onclick="orderProduct(products.find(x=>x.id===${p.id}))">Order on WhatsApp</button></div></article>`).join("");
+}
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("filter").addEventListener("change",renderProducts);
+document.querySelectorAll(".wa-link").forEach(a=>a.addEventListener("click",e=>{if(WHATSAPP_NUMBER==="919999999999"){e.preventDefault();alert("Demo WhatsApp number hai. index.html mein WHATSAPP_NUMBER ko apne number se replace karo.");return}a.href=waUrl("Hello! I would like to enquire about your gifts.");}));
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();
+</script>
+</body>
+</html>
