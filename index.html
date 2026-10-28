@@ -16,7 +16,7 @@
 <body>
 <div class="topbar">A little thought can make a big moment ✦ Thoughtful gifts for every occasion</div>
 <header class="nav">
-  <a class="brand" href="#home">Gift<span>Nest</span></a>
+  <a class="brand" href="#home">Mahagifted</a>
   <nav class="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#shop">Shop Gifts</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
   <a class="navbtn" href="#shop">Shop Now ↗</a>
 </header>
@@ -81,7 +81,7 @@ const products = [
  {id:8,name:"Premium Festive Hamper",category:"Hampers",price:1299,desc:"A warm, festive bundle for family and friends.",image:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80"}
 ];
 function waUrl(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
-function orderProduct(p){if(WHATSAPP_NUMBER==="919999999999"){alert("Demo WhatsApp number hai. index.html mein WHATSAPP_NUMBER ko apne number se replace karo.");return}window.open(waUrl("Hello! I want to order: "+p.name+" | Price: ₹"+p.price+". Please confirm availability and delivery."),"_blank")}
+function orderProduct(p){if(WHATSAPP_NUMBER==="918269110086"){alert("Demo WhatsApp number hai. index.html mein WHATSAPP_NUMBER ko apne number se replace karo.");return}window.open(waUrl("Hello! I want to order: "+p.name+" | Price: ₹"+p.price+". Please confirm availability and delivery."),"_blank")}
 function setCategory(c){document.getElementById("filter").value=c;renderProducts()}
 function renderProducts(){
  const query=document.getElementById("search").value.toLowerCase().trim();
